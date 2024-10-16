@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - StoreChase</title>
+    <title>Atuaçao - </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('pexels-pixabay-290275.jpg'); /* Substitua pelo caminho da sua imagem */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-color: #f4f4f4;
             color: #333;
         }
 
@@ -52,6 +49,17 @@
             color: #1c5980;
         }
 
+
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
         main {
             padding-top: 80px; /* Espaço para o cabeçalho fixo */
         }
@@ -65,37 +73,32 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .content {
+            padding: 110px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
         footer {
             background-color: #2980b9;
             color: white;
             text-align: center;
             padding: 20px 0;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        input, textarea {
-            margin: 10px 0;
-            padding: 10px;
-            width: 80%;
-            max-width: 400px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #2980b9;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #1c5980;
         }
     </style>
 </head>
@@ -108,22 +111,17 @@
         <a href="storechase.html">StoreChase</a>
         <a href="servicos.html">Serviços</a>
         <a href="atuacao.html">Atuação</a>
-        <a href="contato.html" style="font-weight: bold;">Contato</a>
+        <a href="contato.html">Contato</a>
     </nav>
 </header>
 
-<main>
-    <section id="contato">
-        <h2>Fale Conosco</h2>
-        <form action="mailto:contato@storechase.com" method="post" enctype="text/plain">
-            <input type="text" name="nome" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu E-mail" required>
-            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
-</main>
-
+<div class="content">
+    <h1>Fale Conosco</h1>
+    <h2>Para maiores informações</h2>
+    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+    <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+    <p><strong>Email:</strong> contato@storechase.com.br</p>
+</div>
 <footer style="background-color: #2980b9; color: white; text-align: center; padding: 20px 0;">
     <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
         <div style="flex: 1;">
@@ -146,7 +144,3 @@
     <div style="margin-top: 10px;">
         <p style="font-weight: bold; font-size: 12px; margin: 0;">&copy; 2021 StoreChase. Todos os direitos reservados.</p>
     </div>
-</footer>
-
-</body>
-</html>
