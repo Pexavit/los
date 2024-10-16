@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atuação - </title>
+    <title>Atuação - StoreChase</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
@@ -20,29 +20,28 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding: 10px 20px; /* Reduzido para melhor responsividade */
+            padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            display: flex; /* Flexbox para melhor alinhamento */
-            justify-content: space-between; /* Espaçamento entre logo e nav */
-            align-items: center; /* Alinhamento vertical centralizado */
         }
 
         .logo {
-            font-size: 24px; /* Ajustado para ser menor em telas menores */
+            font-size: 28px;
             font-weight: bold;
             color: #2c3e50;
+            float: left;
         }
 
         nav {
             display: flex;
-            gap: 20px; /* Espaçamento entre os links */
+            justify-content: flex-end;
         }
 
         nav a {
             color: #2980b9;
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold; /* Negrito em todos os links */
+            font-weight: 600;
             transition: color 0.3s;
         }
 
@@ -50,12 +49,8 @@
             color: #1c5980;
         }
 
-        main {
-            padding-top: 80px; /* Espaço para o cabeçalho fixo */
-        }
-
         .content {
-            padding: 20px; /* Padding reduzido para telas menores */
+            padding: 110px 20px; /* Ajusta o padding para dispositivos móveis */
             text-align: center;
         }
 
@@ -80,25 +75,51 @@
             color: white;
             text-align: center;
             padding: 20px 0;
-            margin-top: 20px; /* Espaço acima do footer */
         }
 
-        /* Responsividade */
+        /* Media Queries para responsividade */
         @media (max-width: 768px) {
             .logo {
-                font-size: 20px; /* Menor em telas menores */
+                font-size: 24px;
+            }
+
+            nav {
+                flex-direction: column; /* Muda para coluna em telas menores */
+                align-items: flex-start; /* Alinha à esquerda */
+            }
+
+            nav a {
+                margin: 10px 0; /* Ajuste de margem */
             }
 
             h1 {
-                font-size: 28px; /* Ajuste para h1 */
+                font-size: 28px;
             }
 
             h2 {
-                font-size: 24px; /* Ajuste para h2 */
+                font-size: 24px;
             }
 
             p {
-                font-size: 16px; /* Ajuste para p */
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
             }
         }
     </style>
@@ -116,84 +137,34 @@
     </nav>
 </header>
 
-<style>
-    header {
-        background-color: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #2c3e50;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        color: #2980b9;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.3s;
-    }
-
-    nav a:hover {
-        color: #1c5980;
-    }
-
-    @media (max-width: 600px) {
-        .logo {
-            font-size: 20px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            font-size: 14px;
-        }
-    }
-</style>
-
-<main>
-    <div class="content">
-        <h1>Fale Conosco</h1>
-        <h2>Para maiores informações</h2>
-        <p><strong>Telefone:</strong> (11) 1234-5678</p>
-        <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
-        <p><strong>Email:</strong> contato@storechase.com.br</p>
-    </div>
-</main>
+<div class="content">
+    <h1>Fale Conosco</h1>
+    <h2>Para maiores informações</h2>
+    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+    <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+    <p><strong>Email:</strong> contato@storechase.com.br</p>
+</div>
 
 <footer>
-    <div>
-        <h1 style="font-size: 24px; margin: 0; color: white;">StoreChase</h1>
-    </div>
-    <div>
-        <a href="index.html" style="color: white; text-decoration: none;">Home</a>
-        <a href="storechase.html" style="color: white; text-decoration: none;">StoreChase</a>
-        <a href="servicos.html" style="color: white; text-decoration: none;">Serviços</a>
-        <a href="atuacao.html" style="color: white; text-decoration: none;">Atuação</a>
-        <a href="contato.html" style="color: white; text-decoration: none;">Contato</a>
-    </div>
-    <div>
-        <p style="margin: 0;">Contato: contato@storechase.com</p>
-        <p style="margin: 0;">Telefone: (11) 1234-5678</p>
-        <p style="margin: 0;">CRECI: 00000-J</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+        <div style="flex: 1;">
+            <h1 style="font-size: 24px; margin: 0; color: white;">StoreChase</h1>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <a href="index.html" style="color: white; text-decoration: none; display: block;">Home</a>
+            <a href="storechase.html" style="color: white; text-decoration: none; display: block;">StoreChase</a>
+            <a href="servicos.html" style="color: white; text-decoration: none; display: block;">Serviços</a>
+            <a href="atuacao.html" style="color: white; text-decoration: none; display: block;">Atuação</a>
+            <a href="contato.html" style="color: white; text-decoration: none; display: block;">Contato</a>
+        </div>
+        <div style="flex: 1; text-align: right;">
+            <p style="margin: 0;">Contato: contato@storechase.com</p>
+            <p style="margin: 0;">Telefone: (11) 1234-5678</p>
+            <p style="margin: 0;">CRECI: 00000-J</p>
+        </div>
     </div>
     <hr style="border: 1px solid white; width: 100%; margin: 10px 0;"/>
-    <div>
+    <div style="margin-top: 10px;">
         <p style="font-weight: bold; font-size: 12px; margin: 0;">&copy; 2021 StoreChase. Todos os direitos reservados.</p>
     </div>
 </footer>
