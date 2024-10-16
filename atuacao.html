@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atuação - StoreChase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            float: left;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            color: #2980b9;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1c5980;
+        }
+        main {
+            padding-top: 80px; /* Espaço para o cabeçalho fixo */
+        }
+        section {
+            margin: 60px 20px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .map-container {
+            position: relative;
+        }
+        .map-image {
+            width: 100%;
+            max-width: 800px; /* Limita a largura do mapa */
+            border-radius: 8px;
+        }
+        .highlight {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: red; /* Cor para marcar as capitais */
+            border-radius: 50%;
+        }
+        .sede {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">StoreChase</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="storechase.html">StoreChase</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="atuacao.html" style="font-weight: bold;">Atuação</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<main>
+    <section id="atuacao">
+        <h2>Áreas de Atuação</h2>
+        <div class="map-container">
+            <img src="mapa-brasil.jpg" alt="Mapa do Brasil" class="map-image">
+            <!-- Exemplos de marcações. Ajuste as posições conforme necessário -->
+            <div class="highlight" style="top: 30%; left: 45%;"></div> <!-- Brasília -->
+            <div class="highlight" style="top: 60%; left: 35%;"></div> <!-- São Paulo -->
+            <div class="highlight" style="top: 25%; left: 65%;"></div> <!-- Rio de Janeiro -->
+            <div class="highlight" style="top: 70%; left: 50%;"></div> <!-- Belo Horizonte -->
+            <!-- Adicione mais divs highlight conforme necessário para outras capitais -->
+        </div>
+        <p class="sede">Nossa sede está localizada em São Paulo.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2021 StoreChase. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
